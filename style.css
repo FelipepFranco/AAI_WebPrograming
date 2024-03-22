@@ -142,8 +142,8 @@ footer{
     align-items: center;
     justify-content:center;
     width:100%;
-    min-height:80px;
-    max-height:100px;
+    min-height:50px;
+    max-height:60px;
     font-size: 20px;
     background-color: var(--primary-color-bg);
     font-weight: var(--prymary-font-weight);
