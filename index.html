@@ -24,7 +24,7 @@
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="div_nav">
                 <ul class="nav_itens">
                     <li><a href="#">HELP</a></li>
                     <span  id="bar">|</span>
@@ -51,8 +51,24 @@
     </main>
 
     <footer>
-       <p>🚀❣️🚀 Pachekinn  🚀❣️🚀</p> 
+        <img style="width: 50px ;" src="assets/images/gif.gif" alt="">
+        <p style="margin: 0 25px ;">💠💠 Felipe  Franco 💠💠</p> 
+        <img style="width: 50px ;" src="assets/images/gif.gif" alt="">
     </footer>
 </body>
+<script>
+
+const images = ["image1.png", "image2.png", "image3.png", "image4.png", "image5.png", "image6.png"];
+let num_image = 0;
+
+function changeBackgroundImage() {
+    const imageUrl = `url(assets/images/${images[num_image]})`;
+    document.querySelector(".image_disc").style.backgroundImage = imageUrl;
+
+    num_image = (num_image + 1) % images.length;
+}
+
+setInterval(changeBackgroundImage, 2500); 
+</script>
 
 </html>
